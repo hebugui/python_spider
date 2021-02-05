@@ -1,0 +1,13 @@
+import requests
+import re
+import urllib
+
+
+"""获取网址"""
+url = 'https://www.vmgirls.com/12985.html'
+headers = {
+    'user-agent': 'Mozilla / 5.0(Windows NT 10.0;Win64;x64) AppleWebKit / 537.36(KHTML, likeGecko) Chrome / 70.0.3538.102Safari / 537.36Edge / 18.18362',
+}
+# 自己的身份
+response = requests.get(url,headers=headers)
+print(response.text)
